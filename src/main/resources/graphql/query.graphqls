@@ -1,0 +1,9 @@
+type Query {
+    getCarByModel(model: String): CarDTOr
+    getCarByModelAndPrice(model:String,price:Float): CarDTOr
+}
+type CarDTOr {
+    model: String,
+    color:String,
+    price:Float
+}

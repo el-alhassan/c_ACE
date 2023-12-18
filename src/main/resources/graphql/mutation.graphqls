@@ -1,0 +1,12 @@
+type Mutation{
+    saveCar(Car:CarDTO):CarDTOr
+    deleteCar(id:ID):CarDTOr
+}
+
+
+input CarDTO {
+    model: String,
+    color:String,
+    price:Float
+}
+
